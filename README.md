@@ -7,5 +7,5 @@ Building robust web applications<br/>
 Sharing knowledge through writing on [Medium](https://medium.com/@ryson_theo)<br/>
 Currently exploring the exciting world of AI and ML.<br/>
 Let's [connect!](https://www.linkedin.com/in/ribin-k-roy-a429602a2/)
-
+[![An image of @ribinkroy's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ribinkroy)](https://holopin.io/@ribinkroy)
 [![Ribin's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ribin-K-Roy&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
