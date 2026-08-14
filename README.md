@@ -1,7 +1,9 @@
 <div align="center">
   
 <p align="center">
-  <img src="./profile-terminal.svg" alt="Ribin K Roy Terminal" width="100%" />
+  <a href="#">
+    <img src="./profile-terminal.svg" alt="Ribin K Roy Terminal" width="100%" />
+  </a>
 </p>
 
   ---
