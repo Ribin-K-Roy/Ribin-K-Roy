@@ -1,6 +1,6 @@
 <svg fill="none" viewBox="0 0 850 285" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    /* Clip path to give the GIF rounded corners */
+    <!-- Clip path to round the planet canvas corner -->
     <clipPath id="gif-radius">
       <rect x="35" y="80" width="145" height="145" rx="10" />
     </clipPath>
@@ -29,6 +29,29 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
+
+    /* Pixel Planet SVG Animations */
+    .space-bg { fill: #050814; }
+    .stars { fill: #ffffff; opacity: 0.6; animation: pulse 2s ease-in-out infinite alternate; }
+    .planet-body { fill: #3251f6; }
+    .planet-shadow { fill: #15803d; }
+    .ring-back { stroke: #a855f7; stroke-width: 6; opacity: 0.6; }
+    .ring-front { stroke: #c084fc; stroke-width: 6; }
+    
+    .orbiting-moon {
+      animation: orbit 4s linear infinite;
+      transform-origin: 107px 152.5px;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      100% { opacity: 0.9; }
+    }
+
+    @keyframes orbit {
+      0% { transform: rotate(0deg) translate(50px) rotate(0deg); }
+      100% { transform: rotate(360deg) translate(50px) rotate(-360deg); }
+    }
   </style>
 
   <!-- Terminal Background Window -->
@@ -46,20 +69,35 @@
     <text class="text-cmd" x="200" y="0">gh user view Ryson-Theo</text>
   </g>
 
-  <!-- Embedded GIF (Left Side) -->
-  <g>
-    <image 
-      href="https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif" 
-      x="35" 
-      y="80" 
-      width="145" 
-      height="145" 
-      clip-path="url(#gif-radius)" 
-      preserveAspectRatio="xMidYMid slice" 
-    />
-    <!-- GIF Border Frame -->
-    <rect x="35" y="80" width="145" height="145" rx="10" fill="none" stroke="#30363d" stroke-width="1.5" />
+  <!-- Animated Pixel Space Canvas (Inside Terminal Slot) -->
+  <g clip-path="url(#gif-radius)">
+    <!-- Space Background -->
+    <rect x="35" y="80" width="145" height="145" class="space-bg" />
+    
+    <!-- Twinkling Stars -->
+    <rect x="50" y="95" width="2" height="2" class="stars" />
+    <rect x="140" y="110" width="3" height="3" class="stars" />
+    <rect x="70" y="190" width="2" height="2" class="stars" />
+    <rect x="160" y="180" width="3" height="3" class="stars" />
+    <rect x="110" y="90" width="2" height="2" class="stars" />
+
+    <!-- Planet Back Ring -->
+    <ellipse cx="107" cy="152" rx="45" ry="12" class="ring-back" transform="rotate(-15 107 152)" />
+
+    <!-- Main Planet Body -->
+    <circle cx="107" cy="152.5" r="28" class="planet-body" />
+    <!-- Pixel Shadow -->
+    <path d="M 107 124.5 A 28 28 0 0 1 135 152.5 A 28 28 0 0 1 107 180.5 A 20 20 0 0 0 107 124.5 Z" class="planet-shadow" />
+
+    <!-- Planet Front Ring -->
+    <path d="M 63 152 A 45 12 0 0 0 151 152" class="ring-front" fill="none" transform="rotate(-15 107 152)" />
+
+    <!-- Orbiting Moon -->
+    <circle cx="107" cy="152.5" r="5" fill="#38bdf8" class="orbiting-moon" />
   </g>
+
+  <!-- Canvas Frame Border -->
+  <rect x="35" y="80" width="145" height="145" rx="10" fill="none" stroke="#30363d" stroke-width="1.5" />
 
   <!-- Contact Card Output (Right Side) -->
   <g transform="translate(200, 0)">
