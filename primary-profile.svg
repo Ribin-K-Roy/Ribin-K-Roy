@@ -1,0 +1,97 @@
+<svg fill="none" viewBox="0 0 850 285" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    /* Clip path to give the GIF rounded corners */
+    <clipPath id="gif-radius">
+      <rect x="35" y="80" width="145" height="145" rx="10" />
+    </clipPath>
+  </defs>
+
+  <style>
+    /* Terminal Styles */
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 10px; }
+    .text-prompt { font: bold 13px 'Fira Code', Consolas, Monaco, monospace; fill: #3fb950; }
+    .text-path { font: 13px 'Fira Code', Consolas, Monaco, monospace; fill: #8b949e; }
+    .text-cmd { font: bold 13px 'Fira Code', Consolas, Monaco, monospace; fill: #c9d1d9; }
+    
+    /* Card Info Styles */
+    .card-border { font: 13px 'Fira Code', Consolas, Monaco, monospace; fill: #58a6ff; }
+    .text-label { font: bold 12px 'Fira Code', Consolas, Monaco, monospace; fill: #f0883e; }
+    .text-value { font: 12px 'Fira Code', Consolas, Monaco, monospace; fill: #c9d1d9; }
+    .text-status { font: bold 12px 'Fira Code', Consolas, Monaco, monospace; fill: #3fb950; }
+    .text-link { font: bold 12px 'Fira Code', Consolas, Monaco, monospace; fill: #58a6ff; }
+
+    /* Blinking Cursor Animation */
+    .cursor {
+      fill: #58a6ff;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Terminal Background Window -->
+  <rect width="848" height="283" x="1" y="1" class="bg" />
+
+  <!-- Window Header Buttons -->
+  <circle cx="25" cy="22" r="6" fill="#ff5f56" />
+  <circle cx="45" cy="22" r="6" fill="#ffbd2e" />
+  <circle cx="65" cy="22" r="6" fill="#27c93f" />
+
+  <!-- Command Input -->
+  <g transform="translate(25, 55)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">gh user view Ryson-Theo</text>
+  </g>
+
+  <!-- Embedded GIF (Left Side) -->
+  <g>
+    <image 
+      href="https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif" 
+      x="35" 
+      y="80" 
+      width="145" 
+      height="145" 
+      clip-path="url(#gif-radius)" 
+      preserveAspectRatio="xMidYMid slice" 
+    />
+    <!-- GIF Border Frame -->
+    <rect x="35" y="80" width="145" height="145" rx="10" fill="none" stroke="#30363d" stroke-width="1.5" />
+  </g>
+
+  <!-- Contact Card Output (Right Side) -->
+  <g transform="translate(200, 0)">
+    <text class="card-border" x="0" y="95">┌── PRIMARY USER PROFILE ─────────────────────────────────┐</text>
+    
+    <text class="text-label" x="12" y="118">│ ACCOUNT  :</text>
+    <text class="text-value" x="120" y="118">Ryson-Theo (Main Account)</text>
+    <text class="card-border" x="555" y="118">│</text>
+
+    <text class="text-label" x="12" y="140">│ ROLE     :</text>
+    <text class="text-value" x="120" y="140">Full-Stack Developer &amp; Systems Learner</text>
+    <text class="card-border" x="555" y="140">│</text>
+
+    <text class="text-label" x="12" y="162">│ FOCUS    :</text>
+    <text class="text-value" x="120" y="162">MERN Architecture • Cloud • System Design</text>
+    <text class="card-border" x="555" y="162">│</text>
+
+    <text class="text-label" x="12" y="184">│ STATUS   :</text>
+    <text class="text-status" x="120" y="184">🟢 Active Primary Account</text>
+    <text class="card-border" x="555" y="184">│</text>
+
+    <text class="text-label" x="12" y="206">│ LINK     :</text>
+    <text class="text-link" x="120" y="206">https://github.com/Ryson-Theo</text>
+    <text class="card-border" x="555" y="206">│</text>
+
+    <text class="card-border" x="0" y="225">└─────────────────────────────────────────────────────────┘</text>
+  </g>
+
+  <!-- Active Prompt with Blinking Cursor -->
+  <g transform="translate(25, 260)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <rect x="200" y="-12" width="8" height="15" class="cursor" />
+  </g>
+</svg>
