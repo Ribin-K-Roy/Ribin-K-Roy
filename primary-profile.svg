@@ -101,7 +101,7 @@
 
   <!-- Contact Card Output (Right Side) -->
   <g transform="translate(200, 0)">
-    <text class="card-border" x="0" y="95">┌── PRIMARY USER PROFILE ─────────────────────────────────┐</text>
+    <text class="card-border" x="0" y="95">┌───────── PRIMARY USER PROFILE ───────────────────────────────────────────────┐</text>
     
     <text class="text-label" x="12" y="118">│ ACCOUNT  :</text>
     <text class="text-value" x="120" y="118">Ryson-Theo (Main Account)</text>
@@ -123,7 +123,7 @@
     <text class="text-link" x="120" y="206">https://github.com/Ryson-Theo</text>
     <text class="card-border" x="555" y="206">│</text>
 
-    <text class="card-border" x="0" y="225">└─────────────────────────────────────────────────────────┘</text>
+    <text class="card-border" x="0" y="225">└──────────────────────────────────────────────────────────────────────────────┘</text>
   </g>
 
   <!-- Active Prompt with Blinking Cursor -->
