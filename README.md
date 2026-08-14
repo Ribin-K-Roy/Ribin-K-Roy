@@ -71,11 +71,8 @@
 
 ## Primary Profile
 
-<div align="center" style="position: relative; width: 100%; max-width: 850px; margin: 0 auto;">
+<p align="center">
   <a href="https://github.com/Ryson-Theo" target="_blank">
     <img src="./primary-profile.svg" alt="Primary Profile Terminal Card" width="100%" />
   </a>
-  <a href="https://github.com/Ryson-Theo" target="_blank" style="position: absolute; left: 4.2%; top: 28.5%; width: 17%; height: 51%;">
-    <img src="https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif" alt="Pixel Art Planet" style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover;" />
-  </a>
-</div>
+</p>
