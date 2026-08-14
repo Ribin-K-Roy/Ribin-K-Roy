@@ -72,7 +72,7 @@
 ## Primary Profile
 
 <p align="center">
-  <a href="https://github.com/Ryson-Theo">
-    <img src="https://img.shields.io/badge/Visit_My_Primary_GitHub_Profile-Ryson--Theo-22C55E?style=for-the-badge" />
+  <a href="https://github.com/Ryson-Theo" target="_blank">
+    <img src="./primary-profile.svg" alt="Primary Profile Terminal Card" width="100%" />
   </a>
 </p>
