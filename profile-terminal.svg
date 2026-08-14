@@ -1,1 +1,145 @@
+<svg fill="none" viewBox="0 0 850 1150" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Global Styles */
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 10px; }
+    .text-prompt { font: bold 13px 'Fira Code', Consolas, Monaco, monospace; fill: #3fb950; }
+    .text-path { font: 13px 'Fira Code', Consolas, Monaco, monospace; fill: #8b949e; }
+    .text-cmd { font: bold 13px 'Fira Code', Consolas, Monaco, monospace; fill: #c9d1d9; }
+    .text-header { font: bold 13px 'Fira Code', Consolas, Monaco, monospace; fill: #d2a8ff; }
+    .text-body { font: 12px 'Fira Code', Consolas, Monaco, monospace; fill: #c9d1d9; }
+    .text-muted { font: 12px 'Fira Code', Consolas, Monaco, monospace; fill: #8b949e; }
+    .text-accent { font: 12px 'Fira Code', Consolas, Monaco, monospace; fill: #f0883e; }
+    .ascii { font: 7px 'Fira Code', Consolas, Monaco, monospace; fill: #58a6ff; font-weight: bold; white-space: pre; }
+    
+    /* Blinking Cursor Animation */
+    .cursor {
+      fill: #58a6ff;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect width="848" height="1148" x="1" y="1" class="bg" />
+
+  <!-- Window Buttons -->
+  <circle cx="25" cy="22" r="6" fill="#ff5f56" />
+  <circle cx="45" cy="22" r="6" fill="#ffbd2e" />
+  <circle cx="65" cy="22" r="6" fill="#27c93f" />
+
+  <!-- Command 1: whoami -->
+  <g transform="translate(25, 55)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">whoami</text>
+  </g>
+
+  <!-- ASCII Art Output -->
+  <g transform="translate(25, 70)">
+    <text class="ascii" y="10">▐▓▓▓▓▓▓▓▓▓▓▄ ▐▓▓▓▌▐▓▓▓▓▓▓▓▓▓▓▄ ▐▓▓▓▌▐▓▓▓▄   ▐▓▓▓▌    ▐▓▓▓▌   ▐▓▓▓▌    ▐▓▓▓▓▓▓▓▓▓▓▄  ▄▓▓▓▓▓▓▓▓▓▄ ▐▓▓▓▌   ▐▓▓▓▌</text>
+    <text class="ascii" y="20">▐▒▒▒▌▀▀▀▐▒▒▒▌▐▒▒▒▌▐▒▒▒▌▀▀▀▐▒▒▒▌▐▒▒▒▌▐▒▒▒▒▒▄ ▐▒▒▒▌    ▐▒▒▒▌   ▐▒▒▒▌    ▐▒▒▒▌▀▀▀▐▒▒▒▌▐▒▒▒▌▀▀▀▐▒▒▒▌▐▒▒▒▌   ▐▒▒▒▌</text>
+    <text class="ascii" y="30">▐░░░▌   ▐░░█▌▐░░░▌▐░░░▌   ▐░░█▌▐░░░▌▐░░░▌▀░░█░░░▌    ▐░░░▌   ▐░░█▌    ▐░░░▌   ▐░░█▌▐░░░▌   ▐░░░▌▐░░░▌   ▐░░░▌</text>
+    <text class="ascii" y="40">▐███▌▓▓▓▓██▄ ▐███▌▐███▌▓▓▓▓██▄ ▐███▌▐██░▌  ▀████▌    ▐████▓▓▓███▄     ▐███▌▓▓▓▓██▄ ▐██░▌   ▐███▌ ▀██▓▓▓▓████▌</text>
+    <text class="ascii" y="50">▐▓▓▓▌   ▐▓▓▓▌▐▓▓▓▌▐▓▓▓▌   ▐▓▓▓▌▐▓▓▓▌▐▓▓▓▌   ▐▓▓▓▌    ▐▓▓▓▌   ▐▓▓▓▌    ▐▓▓▓▌   ▐▓▓▓▌▐▓▓▓▌   ▐▓▓▓▌        ▐▓▓▓▌</text>
+    <text class="ascii" y="60">▐▒▒▒▌   ▐▒▒▒▌▐▒▒▒▌▐▒▒▒▌   ▐▒▒▒▌▐▒▒▒▌▐▒▒▒▌   ▐▒▒▒▌    ▐▒▒▒▌   ▐▒▒▒▌    ▐▒▒▒▌   ▐▒▒▒▌▐▒▒▒▌   ▐▒▒▒▌▐▒▒▒▌   ▐▒▒▒▌</text>
+    <text class="ascii" y="70">▐░░░▌   ▐░░░▌▐░░░▌▐░░░░░░░░░░▀ ▐░░░▌▐░░░▌   ▐░░░▌    ▐░░░▌   ▐░░░▌    ▐░░░▌   ▐░░░▌ ▀░░░░░░░░░▀  ▀░░░░░░░░░▀</text>
+  </g>
+
+  <!-- Command 2: cat bio.txt -->
+  <g transform="translate(25, 175)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat bio.txt</text>
+  </g>
+  <g transform="translate(25, 195)">
+    <text class="text-header" x="0" y="0">> RIBIN K ROY | Full-Stack Developer (MERN) | Backend &amp; Systems Learner | Exploring AI/ML</text>
+    <text class="text-body" x="0" y="20">BCA Graduate • MG University, Kottayam | Primary GitHub: github.com/Ryson-Theo</text>
+    <text class="text-muted" x="0" y="40">I build scalable APIs and production-ready systems with MERN, focusing on backend architecture and data integrity.</text>
+    <text class="text-muted" x="0" y="55">Currently expanding into Python, ML, and cloud infrastructure to bridge full-stack dev with intelligent systems.</text>
+  </g>
+
+  <!-- Command 3: cat core_engineering.txt -->
+  <g transform="translate(25, 290)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat core_engineering.txt</text>
+  </g>
+  <g transform="translate(25, 310)">
+    <text class="text-header" x="0" y="0">[Backend &amp; System Design]</text>
+    <text class="text-body" x="0" y="18">• Focus: Scalable API architecture, data integrity, RBAC, and secure JWT auth.</text>
+    <text class="text-muted" x="0" y="33">• Stack: Node.js, Express, MongoDB, PHP, MySQL, PostgreSQL.</text>
+    
+    <text class="text-header" x="0" y="60">[Frontend &amp; UX Engineering]</text>
+    <text class="text-body" x="0" y="78">• Focus: Responsive, maintainable component systems, state management, i18n.</text>
+    <text class="text-muted" x="0" y="93">• Stack: React, Next.js, Context API, Modern CSS, Tailwind CSS.</text>
+    
+    <text class="text-header" x="0" y="120">[AI &amp; Data Engineering (Active Development)]</text>
+    <text class="text-body" x="0" y="138">• Focus: Data automation pipelines, vectorization, computer vision, containerized ML inference.</text>
+    <text class="text-muted" x="0" y="153">• Stack: Python, OpenCV, TensorFlow, TensorFlow.js, Docker.</text>
+  </g>
+
+  <!-- Command 4: cat tech_stack.txt -->
+  <g transform="translate(25, 500)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat tech_stack.txt</text>
+  </g>
+  <g transform="translate(25, 520)">
+    <text class="text-body" x="0" y="0"><tspan class="text-accent">Frontend:</tspan>       React • Next.js • JavaScript • Tailwind CSS</text>
+    <text class="text-body" x="0" y="20"><tspan class="text-accent">Backend:</tspan>        Node.js • Express.js • PHP • Next.js Fullstack</text>
+    <text class="text-body" x="0" y="40"><tspan class="text-accent">Databases:</tspan>      MongoDB • MySQL • PostgreSQL • Supabase PostgreSQL • Upstash Redis</text>
+    <text class="text-body" x="0" y="60"><tspan class="text-accent">DevOps &amp; Hosting:</tspan> Git • Docker • Vercel • Cloudflare</text>
+    <text class="text-body" x="0" y="80"><tspan class="text-accent">Data &amp; AI:</tspan>       Python • OpenCV • TensorFlow • TensorFlow.js • Groq AI API</text>
+    <text class="text-body" x="0" y="100"><tspan class="text-accent">Auth &amp; Services:</tspan> Clerk Authentication • Firebase Auth</text>
+  </g>
+
+  <!-- Command 5: cat extra_skills.txt -->
+  <g transform="translate(25, 655)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat extra_skills.txt</text>
+  </g>
+  <g transform="translate(25, 675)">
+    <text class="text-header" x="0" y="0">[Modern Full-Stack &amp; Cloud Tools]</text>
+    <text class="text-body" x="0" y="18">• Next.js (Fullstack App Router) &amp; Vercel Deployment</text>
+    <text class="text-body" x="0" y="36">• Supabase PostgreSQL &amp; Upstash Redis Caching</text>
+    <text class="text-body" x="0" y="54">• Groq AI API Integration &amp; TensorFlow.js Browser Models</text>
+    <text class="text-body" x="0" y="72">• Clerk Authentication &amp; Cloudflare Security/DNS</text>
+  </g>
+
+  <!-- Command 6: cat current_focus.txt -->
+  <g transform="translate(25, 780)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat current_focus.txt</text>
+  </g>
+  <g transform="translate(25, 800)">
+    <text class="text-body" x="0" y="0"><tspan class="text-accent">Building:</tspan> Python data pipelines &amp; PostgreSQL-based systems</text>
+    <text class="text-body" x="0" y="20"><tspan class="text-accent">Learning:</tspan> Docker, CI/CD, and ML inference patterns</text>
+    <text class="text-body" x="0" y="40"><tspan class="text-accent">Goal:</tspan>     Cloud-native backend engineering with AI integration</text>
+    <text class="text-body" x="0" y="60"><tspan class="text-accent">Open To:</tspan>  Full-time roles, internships, freelance, and collaborative projects</text>
+  </g>
+
+  <!-- Command 7: cat work_style.txt -->
+  <g transform="translate(25, 895)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <text class="text-cmd" x="200" y="0">cat work_style.txt</text>
+  </g>
+  <g transform="translate(25, 915)">
+    <text class="text-body" x="0" y="0">• Prefer async communication, clear documentation, and well-defined responsibilities.</text>
+    <text class="text-body" x="0" y="20">• Enjoy building backend systems and full-stack applications through iterative development.</text>
+    <text class="text-body" x="0" y="40">• Value clean, maintainable code and continuous learning through collaboration and feedback.</text>
+  </g>
+
+  <!-- Active Line with Cursor -->
+  <g transform="translate(25, 990)">
+    <text class="text-prompt" x="0" y="0">ribin-k-roy@github</text>
+    <text class="text-path" x="160" y="0">:~ $</text>
+    <rect x="200" y="-12" width="8" height="15" class="cursor" />
+  </g>
+</svg>
 
